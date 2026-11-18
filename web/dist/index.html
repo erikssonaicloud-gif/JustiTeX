@@ -14,19 +14,19 @@
   
   <style>
     :root {
-      --bg: #07090e;
-      --card-bg: #101626;
-      --card-border: #1e293b;
-      --primary: #8b5cf6;
-      --primary-hover: #7c3aed;
-      --accent: #a855f7;
-      --accent-glow: rgba(168, 85, 247, 0.25);
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
-      --success: #10b981;
-      --success-hover: #059669;
-      --warning: #f59e0b;
-      --border: #232f48;
+      --bg: #F6F1E7;
+      --card-bg: #FFFDF8;
+      --card-border: #DDD3C0;
+      --primary: #2F5D50;
+      --primary-hover: #27503F;
+      --accent: #0F766E;
+      --accent-glow: rgba(15, 118, 110, 0.25);
+      --text: #1F2A27;
+      --text-muted: #55625D;
+      --success: #3E7A5F;
+      --success-hover: #2F5D50;
+      --warning: #92400E;
+      --border: #DDD3C0;
       --grid-line-height: 24px;
     }
 
@@ -49,7 +49,7 @@
     /* Sticky Navigation */
     header {
       border-bottom: 1px solid var(--border);
-      background: rgba(7, 9, 14, 0.9);
+      background: rgba(246, 241, 231, 0.92);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       position: sticky;
@@ -143,17 +143,17 @@
 
     .btn-secondary:hover {
       border-color: var(--primary);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 12px rgba(31, 42, 39, 0.25);
     }
 
     .btn-success {
       background: linear-gradient(135deg, var(--success), var(--success-hover));
       color: #fff;
-      box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+      box-shadow: 0 4px 15px rgba(47, 93, 80, 0.4);
     }
 
     .btn-success:hover {
-      box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
+      box-shadow: 0 8px 25px rgba(47, 93, 80, 0.5);
     }
 
     /* Hero Section */
@@ -168,9 +168,9 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      background: rgba(139, 92, 246, 0.12);
-      border: 1px solid rgba(139, 92, 246, 0.35);
-      color: #c084fc;
+      background: rgba(47, 93, 80, 0.12);
+      border: 1px solid rgba(47, 93, 80, 0.35);
+      color: #2F5D50;
       padding: 0.35rem 0.9rem;
       border-radius: 999px;
       font-size: 0.82rem;
@@ -179,12 +179,13 @@
     }
 
     .hero h1 {
+      font-family: 'Merriweather', Georgia, serif;
       font-size: clamp(2.1rem, 5vw, 3.4rem);
       font-weight: 800;
       line-height: 1.18;
       letter-spacing: -0.03em;
       margin-bottom: 1.25rem;
-      background: linear-gradient(to right, #ffffff 40%, #c084fc);
+      background: linear-gradient(to right, #1F2A27 40%, #92400E);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -219,7 +220,7 @@
       border: 1px solid var(--border);
       border-radius: 1.25rem;
       padding: 1.75rem;
-      box-shadow: 0 20px 40px -15px rgba(0,0,0,0.5);
+      box-shadow: 0 20px 40px -15px rgba(31, 42, 39, 0.35);
     }
 
     @media (max-width: 1040px) {
@@ -262,7 +263,7 @@
     }
 
     .pill {
-      background: #07090e;
+      background: #EFE8DA;
       border: 1px solid var(--border);
       color: var(--text-muted);
       padding: 0.35rem 0.75rem;
@@ -275,8 +276,8 @@
 
     .pill:hover, .pill.active {
       border-color: var(--primary);
-      color: #fff;
-      background: rgba(139, 92, 246, 0.2);
+      color: #2F5D50;
+      background: rgba(47, 93, 80, 0.12);
     }
 
     .form-group {
@@ -300,7 +301,7 @@
 
     .form-control {
       width: 100%;
-      background: #07090e;
+      background: #FFFDF8;
       border: 1px solid var(--border);
       border-radius: 0.5rem;
       padding: 0.65rem 0.85rem;
@@ -327,7 +328,7 @@
     .preview-scroll-wrapper {
       width: 100%;
       overflow-x: auto;
-      background: #07090e;
+      background: #EFE8DA;
       border: 1px solid var(--border);
       border-radius: 0.75rem;
       padding: 1.25rem;
@@ -341,7 +342,7 @@
       max-width: 600px;
       min-width: 480px;
       background: #ffffff;
-      color: #111827;
+      color: #1F2A27;
       border-radius: 0.25rem;
       padding: 2.5rem 1.75rem 2rem 3.6rem;
       font-family: 'Merriweather', 'Times New Roman', serif;
@@ -349,8 +350,8 @@
       line-height: var(--grid-line-height);
       position: relative;
       min-height: 720px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      border: 1px solid #cbd5e1;
+      box-shadow: 0 10px 30px rgba(31, 42, 39, 0.3);
+      border: 1px solid #DDD3C0;
     }
 
     .line-numbers {
@@ -360,8 +361,10 @@
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.72rem;
       line-height: var(--grid-line-height);
-      color: #94a3b8;
-      user-select: none;
+      color: #8A7F6A;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+              user-select: none;
       text-align: right;
       width: 1.2rem;
     }
@@ -372,14 +375,14 @@
       top: 2.5rem;
       height: calc(28 * var(--grid-line-height));
       width: 4px;
-      border-left: 1px solid #94a3b8;
-      border-right: 1px solid #94a3b8;
+      border-left: 1px solid #A89C86;
+      border-right: 1px solid #A89C86;
     }
 
     .caption-box {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      border-bottom: 1.5px solid #111827;
+      border-bottom: 1.5px solid #1F2A27;
       padding-bottom: 0.75rem;
       margin-bottom: 0.75rem;
       font-size: 0.8rem;
@@ -388,7 +391,7 @@
     }
 
     .caption-parties {
-      border-right: 1.5px solid #111827;
+      border-right: 1.5px solid #1F2A27;
       padding-right: 0.75rem;
       min-width: 0;
       word-break: break-word;
@@ -453,17 +456,17 @@
     }
 
     .pro-box {
-      background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(5, 150, 105, 0.04));
-      border: 1px solid rgba(16, 185, 129, 0.35);
+      background: linear-gradient(135deg, rgba(47, 93, 80, 0.12), rgba(39, 80, 63, 0.04));
+      border: 1px solid rgba(47, 93, 80, 0.35);
       border-radius: 1.25rem;
       padding: clamp(1.5rem, 4vw, 2.5rem);
       text-align: center;
-      box-shadow: 0 15px 35px -10px rgba(16, 185, 129, 0.2);
+      box-shadow: 0 15px 35px -10px rgba(47, 93, 80, 0.2);
     }
 
     .pro-badge {
       background: var(--success);
-      color: #064e3b;
+      color: #27503F;
       font-size: 0.75rem;
       font-weight: 800;
       padding: 0.25rem 0.8rem;
@@ -505,7 +508,7 @@
       align-items: center;
       gap: 0.5rem;
       font-size: 0.9rem;
-      color: #e2e8f0;
+      color: #1F2A27;
     }
 
     .feature-item span {
@@ -517,7 +520,7 @@
       margin-top: 2rem;
       text-align: center;
       padding: 1.5rem;
-      background: rgba(16, 22, 38, 0.5);
+      background: rgba(239, 232, 218, 0.6);
       border: 1px solid var(--border);
       border-radius: 1rem;
     }
@@ -527,12 +530,12 @@
       position: fixed;
       bottom: 2rem;
       right: 2rem;
-      background: #101626;
+      background: #1F2A27;
       border: 1px solid var(--primary);
       color: #fff;
       padding: 1rem 1.5rem;
       border-radius: 0.75rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+      box-shadow: 0 10px 30px rgba(31, 42, 39, 0.4);
       z-index: 1000;
       display: none;
       align-items: center;
@@ -713,7 +716,7 @@ WHEREFORE, Movant respectfully requests that this Court grant an extension of ti
               <div id="previewBody" style="white-space: pre-line;"></div>
 
               <!-- Dynamic Court Footer -->
-              <div id="previewFooter" style="margin-top: 1.5rem; border-top: 1px solid #d1d5db; padding-top: 0.5rem; font-size: 0.72rem; color: #4b5563; font-family: 'Inter', sans-serif;">
+              <div id="previewFooter" style="margin-top: 1.5rem; border-top: 1px solid #DDD3C0; padding-top: 0.5rem; font-size: 0.72rem; color: #55625D; font-family: 'Inter', sans-serif;">
                 Page 1 of 1 -- MOTION FOR EXTENSION OF TIME PURSUANT TO ORCP 15
               </div>
             </div>
@@ -791,8 +794,8 @@ WHEREFORE, Movant respectfully requests that this Court grant an extension of ti
 
     <!-- Clinic & Institutional License Section -->
     <section class="lead-section" id="clinic" style="max-width: 860px; margin: 3.5rem auto; padding: 0 1.25rem;">
-      <div class="pro-box" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(37, 99, 235, 0.04)); border-color: rgba(59, 130, 246, 0.35); box-shadow: 0 15px 35px -10px rgba(59, 130, 246, 0.2);">
-        <span class="pro-badge" style="background: #3b82f6; color: #1e3a8a;">Institutional Tier</span>
+      <div class="pro-box" style="background: linear-gradient(135deg, rgba(146, 64, 14, 0.12), rgba(123, 54, 12, 0.04)); border-color: rgba(146, 64, 14, 0.35); box-shadow: 0 15px 35px -10px rgba(146, 64, 14, 0.2);">
+        <span class="pro-badge" style="background: #92400E; color: #FFFDF8;">Institutional Tier</span>
         <h2 class="pro-title">Clinic & Public Defender License — $149 / year</h2>
         <p class="pro-desc">Individual pro se filers stay free forever. Legal aid clinics, public defender offices, and pro bono organizations get shared seats, county and venue presets, priority Oregon and Federal template updates, and institutional invoicing.</p>
         
@@ -822,7 +825,7 @@ WHEREFORE, Movant respectfully requests that this Court grant an extension of ti
               </select>
             </div>
           </div>
-          <button type="submit" class="btn" style="background: #3b82f6; color: #fff; font-weight: 700; margin-top: 0.5rem; justify-content: center;">
+          <button type="submit" class="btn" style="background: #2F5D50; color: #fff; font-weight: 700; margin-top: 0.5rem; justify-content: center;">
             📩 Request Clinic License & Invoice ($149/yr)
           </button>
           <p id="clinicStatus" style="font-size: 0.88rem; color: var(--success); text-align: center; margin-top: 0.5rem; min-height: 1.2rem;"></p>

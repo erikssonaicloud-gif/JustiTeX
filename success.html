@@ -9,13 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #07090e;
-      --card-bg: #101626;
-      --card-border: #232f48;
-      --primary: #8b5cf6;
-      --success: #10b981;
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
+      --bg: #F6F1E7;
+      --card-bg: #FFFDF8;
+      --card-border: #DDD3C0;
+      --primary: #2F5D50;
+      --success: #3E7A5F;
+      --text: #1F2A27;
+      --text-muted: #55625D;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -27,14 +27,14 @@
       padding: 0 1.5rem;
       line-height: 1.6;
     }
-    a { color: #6ee7b7; text-decoration: none; }
+    a { color: #2F5D50; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .card {
       border: 1px solid var(--card-border);
       background: var(--card-bg);
       border-radius: 1.25rem;
       padding: 2.5rem;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      box-shadow: 0 20px 40px rgba(31, 42, 39, 0.35);
     }
     .badge {
       font-size: 0.75rem;
@@ -42,7 +42,7 @@
       text-transform: uppercase;
       font-weight: 800;
       color: var(--success);
-      background: rgba(16, 185, 129, 0.12);
+      background: rgba(47, 93, 80, 0.12);
       padding: 0.3rem 0.8rem;
       border-radius: 999px;
       display: inline-block;
@@ -55,13 +55,13 @@
       align-items: center;
       gap: 0.5rem;
       background: var(--success);
-      color: #04140d;
+      color: #FFFDF8;
       font-weight: 700;
       font-size: 1.05rem;
       padding: 0.9rem 1.8rem;
       border-radius: 0.75rem;
       text-decoration: none;
-      box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.4);
+      box-shadow: 0 10px 25px -5px rgba(47, 93, 80, 0.4);
       transition: transform 0.15s ease;
     }
     .btn:hover {
@@ -69,14 +69,14 @@
       text-decoration: none;
     }
     .file-list {
-      background: rgba(7, 9, 14, 0.6);
+      background: rgba(246, 241, 231, 0.7);
       border: 1px solid var(--card-border);
       border-radius: 0.75rem;
       padding: 1.25rem;
       margin: 1.5rem 0;
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.82rem;
-      color: #cbd5e1;
+      color: #55625D;
     }
     .file-list ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; padding: 0; }
     .file-list li::before { content: "✓ "; color: var(--success); }
@@ -105,7 +105,7 @@
     </a>
 
     <div class="file-list">
-      <div style="font-weight: 700; color: #f8fafc; margin-bottom: 0.5rem; font-family: 'Inter', sans-serif;">Included in Version 2.0:</div>
+      <div style="font-weight: 700; color: #1F2A27; margin-bottom: 0.5rem; font-family: 'Inter', sans-serif;">Included in Version 2.0:</div>
       <ul>
         <li>oregon_pleading_28line.tex</li>
         <li>federal_pleading_template.tex</li>
