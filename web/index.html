@@ -630,43 +630,44 @@
         <!-- Left: Form Controls -->
         <div class="editor-pane">
           <div class="pane-header">
-            <div class="pane-title">✏️ Pleading Parameters</div>
-            <div class="preset-pills">
-              <span class="pill active" onclick="loadPreset('motion', this)">Motion</span>
-              <span class="pill" onclick="loadPreset('declaration', this)">Declaration</span>
-              <span class="pill" onclick="loadPreset('complaint', this)">Federal Complaint</span>
+            <h2 class="pane-title" style="margin: 0;">✏️ Pleading Parameters</h2>
+            <div class="preset-pills" role="group" aria-label="Pleading presets">
+              <button type="button" class="pill active" onclick="loadPreset('motion', this)">Motion</button>
+              <button type="button" class="pill" onclick="loadPreset('declaration', this)">Declaration</button>
+              <button type="button" class="pill" onclick="loadPreset('complaint', this)">Federal Complaint</button>
             </div>
           </div>
 
           <div class="form-group">
-            <label>Court Heading</label>
-            <input type="text" id="courtHeader" class="form-control" value="IN THE CIRCUIT COURT OF THE STATE OF OREGON&#10;FOR THE COUNTY OF CLACKAMAS" oninput="updatePreview()">
+            <label for="courtHeader">Court Heading</label>
+            <textarea id="courtHeader" rows="2" class="form-control" oninput="updatePreview()">IN THE CIRCUIT COURT OF THE STATE OF OREGON
+FOR THE COUNTY OF CLACKAMAS</textarea>
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label>Plaintiff(s)</label>
+              <label for="plaintiffText">Plaintiff(s)</label>
               <textarea id="plaintiffText" rows="2" class="form-control" oninput="updatePreview()">JANE DOE,&#10;Plaintiff,</textarea>
             </div>
             <div class="form-group">
-              <label>Defendant(s)</label>
+              <label for="defendantText">Defendant(s)</label>
               <textarea id="defendantText" rows="2" class="form-control" oninput="updatePreview()">ACME ENTERPRISES, INC.,&#10;Defendant.</textarea>
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label>Case Number</label>
+              <label for="caseNumber">Case Number</label>
               <input type="text" id="caseNumber" class="form-control" value="Case No. 26CV12345" oninput="updatePreview()">
             </div>
             <div class="form-group">
-              <label>Document Title</label>
+              <label for="docTitle">Document Title</label>
               <input type="text" id="docTitle" class="form-control" value="MOTION FOR EXTENSION OF TIME PURSUANT TO ORCP 15" oninput="updatePreview()">
             </div>
           </div>
 
           <div class="form-group" style="flex: 1;">
-            <label>Pleading Body (Plain Text or Markdown)</label>
+            <label for="bodyText">Pleading Body (Plain Text or Markdown)</label>
             <textarea id="bodyText" rows="8" class="form-control" oninput="updatePreview()">1. Movant hereby moves the Court for an order extending the deadline to respond to Plaintiff's Complaint by thirty (30) days.
 
 2. Movant shows that good cause exists for the requested extension because counsel was recently retained and requires adequate time to review the underlying records.
@@ -680,7 +681,7 @@ WHEREFORE, Movant respectfully requests that this Court grant an extension of ti
         <!-- Right: Real-time 28-Line Mockup -->
         <div class="preview-pane">
           <div class="pane-header">
-            <div class="pane-title">📄 Live 28-Line UTCR Preview</div>
+            <h2 class="pane-title" style="margin: 0;">📄 Live 28-Line UTCR Preview</h2>
             <span style="font-size: 0.8rem; color: var(--success); font-weight: 600;">● 28-Line Grid Locked</span>
           </div>
 
@@ -693,7 +694,7 @@ WHEREFORE, Movant respectfully requests that this Court grant an extension of ti
               <div class="double-left-rule"></div>
 
               <!-- Court Header -->
-              <div id="previewCourt" style="text-align: center; font-weight: bold; margin-bottom: 0.85rem; font-size: 0.85rem; text-transform: uppercase;">
+              <div id="previewCourt" style="white-space: pre-line; text-align: center; font-weight: bold; margin-bottom: 0.85rem; font-size: 0.85rem; text-transform: uppercase;">
                 IN THE CIRCUIT COURT OF THE STATE OF OREGON<br>FOR THE COUNTY OF CLACKAMAS
               </div>
 
@@ -736,20 +737,20 @@ WHEREFORE, Movant respectfully requests that this Court grant an extension of ti
     </section>
 
     <!-- Value Proposition Cards -->
-    <section class="grid" id="philosophy">
+    <section class="grid" id="philosophy" aria-label="Access to Justice Principles">
       <div class="card">
         <div class="card-icon">📐</div>
-        <h3>28-Line UTCR 2.010 Compliance</h3>
+        <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text);">28-Line UTCR 2.010 Compliance</h2>
         <p>Pre-calculated vertical grid pitch matches 28 numbered lines with exact typography leading, locked left margin rules, and standardized captions.</p>
       </div>
       <div class="card">
         <div class="card-icon">⚡</div>
-        <h3>Plain Text & LaTeX Workflow</h3>
+        <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text);">Plain Text & LaTeX Workflow</h2>
         <p>Draft simply in Markdown or text. JustiTeX compiles clean, professional pleadings with zero widow/orphan lines and consistent running footers.</p>
       </div>
       <div class="card">
         <div class="card-icon">🏛️</div>
-        <h3>100% Free for Access to Justice</h3>
+        <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text);">100% Free for Access to Justice</h2>
         <p>Released under the MIT / AGPLv3. Free forever for pro se filers, legal aid organizations, public defenders, and community advocates.</p>
       </div>
     </section>
@@ -782,9 +783,9 @@ WHEREFORE, Movant respectfully requests that this Court grant an extension of ti
       </div>
 
       <div class="free-box">
-        <h4 style="margin-bottom: 0.5rem; font-size: 1.05rem;">Looking for the open-access basic edition?</h4>
+        <h3 style="margin-bottom: 0.5rem; font-size: 1.05rem;">Looking for the open-access basic edition?</h3>
         <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1rem;">Includes base 28-line Oregon template, Federal pleading template, pleading.sty macro package, and sample motion.</p>
-        <button onclick="downloadFreePack()" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.65rem 1.6rem;">
+        <button type="button" onclick="downloadFreePack()" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.65rem 1.6rem;">
           📦 Download Free Basic Pack (.ZIP)
         </button>
       </div>
@@ -797,25 +798,25 @@ WHEREFORE, Movant respectfully requests that this Court grant an extension of ti
         <h2 class="pro-title">Clinic & Public Defender License — $149 / year</h2>
         <p class="pro-desc">Individual pro se filers stay free forever. Legal aid clinics, public defender offices, and pro bono organizations get shared seats, county and venue presets, priority Oregon and Federal template updates, and institutional invoicing.</p>
         
-        <form id="clinicForm" style="display: grid; gap: 1rem; text-align: left; max-width: 680px; margin: 1.5rem auto 0;">
+        <form id="clinicForm" action="#clinic" method="POST" style="display: grid; gap: 1rem; text-align: left; max-width: 680px; margin: 1.5rem auto 0;">
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
             <div>
-              <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">Organization Name</label>
-              <input required name="org" class="form-control" placeholder="Legal Aid Services of Oregon">
+              <label for="clinicOrg" style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">Organization Name</label>
+              <input id="clinicOrg" required name="org" class="form-control" placeholder="Legal Aid Services of Oregon">
             </div>
             <div>
-              <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">Work Email</label>
-              <input required type="email" name="email" class="form-control" placeholder="docketing@clinic.org">
+              <label for="clinicEmail" style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">Work Email</label>
+              <input id="clinicEmail" required type="email" name="email" class="form-control" placeholder="docketing@clinic.org">
             </div>
           </div>
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
             <div>
-              <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">County / Venue</label>
-              <input name="county" class="form-control" value="Clackamas">
+              <label for="clinicCounty" style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">County / Venue</label>
+              <input id="clinicCounty" name="county" class="form-control" value="Clackamas">
             </div>
             <div>
-              <label style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">Seats Required</label>
-              <select name="seats" class="form-control">
+              <label for="clinicSeats" style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 0.35rem;">Seats Required</label>
+              <select id="clinicSeats" name="seats" class="form-control">
                 <option value="5">5 Seats (Small Clinic)</option>
                 <option value="10" selected>10 Seats (Standard Defender Team)</option>
                 <option value="25">25 Seats (Regional Office)</option>
